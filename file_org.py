@@ -11,3 +11,9 @@ destination_map = {
     'Archives': ['.zip', '.rar'],
     'Misc': []  # Anything else
 }
+
+
+# Create destination folders if not exist
+for folder in destination_map:
+    dest_path = os.path.expanduser(f"~/{folder}")
+    os.makedirs(dest_path, exist_ok=True)
