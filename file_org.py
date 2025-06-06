@@ -35,3 +35,6 @@ for filename in os.listdir(source_folder):
         # Move to Misc if no match
         if not moved:
             shutil.move(file_path, os.path.expanduser(f"~/Misc/{filename}"))
+
+
+print("*** Files organized successfully!")
